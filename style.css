@@ -10,6 +10,14 @@ body{
 .button{
     height: 200px;
     line-height: 200px;
-    border: 2px blue solid;
     background-color: rgb(2, 158, 255);
+    margin: 30px;
+    border-radius: 10px;
+}
+h1{
+    background: linear-gradient(360deg, rgb(6, 243, 255),rgb(201, 1, 251));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
 }
