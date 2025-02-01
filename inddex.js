@@ -28,3 +28,19 @@ document.addEventListener(`keyup`, (e) => {
     btn_do.style.backgroundColor = `#f0f0f0`;
   }
 });
+
+const music_re = document.querySelector(`#re`);
+document.addEventListener(`keydown`, (e) => {
+  if (e.key.toLocaleLowerCase() === `f`) {
+    btn_re.style.backgroundColor = `antiquewhite`;
+    music_re.play();
+    music_re.currentTime = 0;
+  }
+});
+document.addEventListener(`keyup`, (e) => {
+  if (e.key.toLocaleLowerCase() === `f`) {
+    btn_re.style.backgroundColor = `#f0f0f0`;
+    music_re.pause();
+    music_re.currentTime = 0;
+  }
+});
