@@ -190,5 +190,39 @@ document.addEventListener(`keyup`, (e) => {
   }
 });
 
+// le son Sol#
+const music_sol2 = document.querySelector(`#sol2`)
+document.addEventListener(`keydown`, (e) => {
+  if (e.key.toLocaleLowerCase() === `i`) {
+    btn_sol2.style.backgroundColor = `coral`;
+    music_sol2.play();
+    music_sol2.currentTime = 0;
+  }
+});
+document.addEventListener(`keyup`, (e) => {
+  if (e.key.toLocaleLowerCase() === `i`) {
+    btn_sol2.style.backgroundColor = `#f0f0f0`;
+    music_sol2.pause();
+    music_sol2.currentTime = 0;
+  }
+});
+
+// le son La#
+const music_la2 = document.querySelector(`#la2`)
+document.addEventListener(`keydown`, (e) => {
+  if (e.key.toLocaleLowerCase() === `o`) {
+    btn_la2.style.backgroundColor = `orchid`;
+    music_la2.play();
+    music_la2.currentTime = 0;
+  }
+});
+document.addEventListener(`keyup`, (e) => {
+  if (e.key.toLocaleLowerCase() === `o`) {
+    btn_la2.style.backgroundColor = `#f0f0f0`;
+    music_la2.pause();
+    music_la2.currentTime = 0;
+  }
+});
+
 
 
